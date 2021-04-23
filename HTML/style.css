@@ -1,0 +1,47 @@
+.transform__box--img{
+  border: 1px solid black;
+  cursor: pointer;
+  width: 270px;
+  height: 270px;
+}
+.transform__box--img img{
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out ;
+}
+.transform__box--img {
+    position: relative;
+   
+    overflow: hidden;
+}
+.transform__txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    color: white;
+    padding:10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.transform__box--img:hover div.transform__txt {
+    opacity: 1;
+    transform: translateY(50px);
+    transition:ease-in-out 0.5s;
+}
+ 
+.transform__box--img:hover img {
+    transform: scale(1.5);
+    transition: all ease-in-out 0.5s;
+ 
+ 
+}
+.box__mini{
+  width: 100px;
+  height: 40px;
+  background-color: #d7bd73;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
